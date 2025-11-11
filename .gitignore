@@ -35,6 +35,17 @@ yarn.lock
 .npm
 .eslintcache
 
+# Swift
+.build/
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+*.playground
+DerivedData/
+*.swiftmodule
+*.swiftdoc
+.swiftpm/
+
 # IDE
 .vscode/
 .idea/

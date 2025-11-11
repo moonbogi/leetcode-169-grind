@@ -6,31 +6,34 @@
 
 if [ "$#" -lt 3 ]; then
     echo "Usage: ./new_problem.sh <problem-number> \"<problem-title>\" <category> [language]"
-    echo "Example: ./new_problem.sh 1 \"Two Sum\" arrays python"
+    echo "Example: ./new_problem.sh 1 \"Two Sum\" arrays swift"
     echo ""
     echo "Available categories:"
     echo "  arrays, strings, linked-lists, trees, graphs, dynamic-programming,"
     echo "  backtracking, stacks-queues, heaps, binary-search, math, bit-manipulation"
     echo ""
-    echo "Available languages: python (default), javascript"
+    echo "Available languages: swift (default), python, javascript"
     exit 1
 fi
 
 PROBLEM_NUMBER=$1
 PROBLEM_TITLE=$2
 CATEGORY=$3
-LANGUAGE=${4:-python}
+LANGUAGE=${4:-swift}
 
 # Convert problem title to slug (lowercase, hyphens)
 PROBLEM_SLUG=$(echo "$PROBLEM_TITLE" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
 # Determine file extension and template
-if [ "$LANGUAGE" = "javascript" ] || [ "$LANGUAGE" = "js" ]; then
+if [ "$LANGUAGE" = "python" ] || [ "$LANGUAGE" = "py" ]; then
+    EXTENSION="py"
+    TEMPLATE="templates/python_template.py"
+elif [ "$LANGUAGE" = "javascript" ] || [ "$LANGUAGE" = "js" ]; then
     EXTENSION="js"
     TEMPLATE="templates/javascript_template.js"
 else
-    EXTENSION="py"
-    TEMPLATE="templates/python_template.py"
+    EXTENSION="swift"
+    TEMPLATE="templates/swift_template.swift"
 fi
 
 # Create filename
