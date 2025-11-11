@@ -9,8 +9,8 @@ if [ "$#" -lt 3 ]; then
     echo "Example: ./new_problem.sh 1 \"Two Sum\" arrays swift"
     echo ""
     echo "Available categories:"
-    echo "  arrays, strings, linked-lists, trees, graphs, dynamic-programming,"
-    echo "  backtracking, stacks-queues, heaps, binary-search, math, bit-manipulation"
+    echo "  arrays, stacks-queues, two-pointers, sliding-window, linked-lists,"
+    echo "  binary-search, trees, tries, heaps, backtracking"
     echo ""
     echo "Available languages: swift (default), python, javascript"
     exit 1
@@ -43,8 +43,8 @@ FILEPATH="${CATEGORY}/${FILENAME}"
 # Check if category exists
 if [ ! -d "$CATEGORY" ]; then
     echo "Error: Category '$CATEGORY' does not exist."
-    echo "Available categories: arrays, strings, linked-lists, trees, graphs, dynamic-programming,"
-    echo "                      backtracking, stacks-queues, heaps, binary-search, math, bit-manipulation"
+    echo "Available categories: arrays, stacks-queues, two-pointers, sliding-window,"
+    echo "                      linked-lists, binary-search, trees, tries, heaps, backtracking"
     exit 1
 fi
 

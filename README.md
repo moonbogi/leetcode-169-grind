@@ -8,22 +8,39 @@ Systematic journey through 169 essential LeetCode problems.
 
 **Total Completed**: 0/169
 
-### By Category
+### Learning Path Strategy
+**Approach**: Complete Easy → Medium problems for each category before moving to the next. Save all Hard problems for final phase.
 
-| Category | Completed | Total |
-|----------|-----------|-------|
-| Arrays | 0 | TBD |
-| Strings | 0 | TBD |
-| Linked Lists | 0 | TBD |
-| Trees | 0 | TBD |
-| Graphs | 0 | TBD |
-| Dynamic Programming | 0 | TBD |
-| Backtracking | 0 | TBD |
-| Stacks & Queues | 0 | TBD |
-| Heaps | 0 | TBD |
-| Binary Search | 0 | TBD |
-| Math | 0 | TBD |
-| Bit Manipulation | 0 | TBD |
+**Order**:
+1. Arrays
+2. Stacks & Queues  
+3. Two Pointers
+4. Sliding Window
+5. Linked Lists
+6. Binary Search
+7. Trees
+8. Tries
+9. Heaps / Priority Queue
+10. Backtracking
+11. **Hard Problems** (all categories)
+
+### Progress by Category
+
+| # | Category | Easy | Medium | Hard | Total |
+|---|----------|------|--------|------|-------|
+| 1 | Arrays | 0 | 0 | - | 0 |
+| 2 | Stacks & Queues | 0 | 0 | - | 0 |
+| 3 | Two Pointers | 0 | 0 | - | 0 |
+| 4 | Sliding Window | 0 | 0 | - | 0 |
+| 5 | Linked Lists | 0 | 0 | - | 0 |
+| 6 | Binary Search | 0 | 0 | - | 0 |
+| 7 | Trees | 0 | 0 | - | 0 |
+| 8 | Tries | 0 | 0 | - | 0 |
+| 9 | Heaps / Priority Queue | 0 | 0 | - | 0 |
+| 10 | Backtracking | 0 | 0 | - | 0 |
+| 11 | **Hard Problems** | - | - | 0 | 0 |
+
+**Current Focus**: 🎯 Arrays (Easy)
 
 ## 📁 Project Structure
 
